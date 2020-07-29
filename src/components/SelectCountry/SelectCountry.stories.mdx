@@ -1,0 +1,30 @@
+<!-- Addons -->
+import { Meta, Story, Preview } from '@storybook/addon-docs/blocks';
+import { withA11y } from "@storybook/addon-a11y";
+import { withXD } from "storybook-addon-xd-designs";
+import { action } from "@storybook/addon-actions";
+
+<!-- Component -->
+import { SelectCountry } from ".";
+
+<Meta
+  title="Átomos|SelectCountry"
+  component={SelectCountry}
+  decorators={[withA11y, withXD]} />
+
+
+# SelectCountry
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eos nostrum, omnis ullam provident debitis eveniet dolore cumque iure iusto, quisquam ab facere molestiae, unde repellendus? Explicabo consequuntur laboriosam quasi.
+
+## Texto
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quasi eligendi doloribus repellat facilis, sint magni laboriosam eaque aliquam inventore voluptas doloremque reprehenderit suscipit, itaque, accusamus saepe vitae nostrum molestias?
+
+<Preview>
+  <Story name="Default">
+    <SelectCountry />
+  </Story>
+</Preview>
+
+

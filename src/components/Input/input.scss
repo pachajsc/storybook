@@ -1,0 +1,41 @@
+.MuiFormControl-root {
+  width: 100%;
+}
+.input-base {
+  position: relative;
+  .MuiFormControl-root {
+    width: 100%;
+    .MuiInputBase-input {
+      padding: 11.5px 14px;
+    }
+    .MuiInputLabel-outlined {
+      transform: translate(14px, 13px) scale(1);
+    }
+    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+      transform: translate(14px, -6px) scale(0.75);
+    }
+  }
+  .validate-icon {
+    position: absolute;
+    right: 15px;
+    margin-top: 9px;
+    z-index: 5;
+    &.icon-success {
+      color: #28a745;
+    }
+    &.icon-error {
+      color: #dc3545;
+    }
+  }
+  .success-field {
+    .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+    .MuiOutlinedInput-notchedOutline {
+      border: 1px solid #28a745;
+    }
+    .MuiFormLabel-root.Mui-focused,
+    .MuiInputLabel-outlined.MuiInputLabel-shrink,
+    .MuiInputLabel-outlined.MuiInputLabel-shrink {
+      color: #28a745;
+    }
+  }
+}
